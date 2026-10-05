@@ -1,0 +1,90 @@
+/* style.css içindeki ilgili bölümler (güncellenmiştir) */
+
+/* 1. NAV BAR GÖRÜNÜRLÜK FIX */
+.navbar-dark .navbar-brand {
+    color: #ffd700 !important; /* Marka Adı: Altın sarısı, çok belirgin */
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    /* Tüm linklerin varsayılan rengi: Parlak Beyaz */
+    color: #faf6f6 !important; 
+    opacity: 0.9; 
+    transition: color 0.3s;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+    /* Üzerine gelince (Hover): Altın Sarısı */
+    color: #ffd700 !important; 
+    opacity: 1;
+}
+
+.carousel-text-area {
+    background:rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    border-radius:20px;
+    padding: 30px;
+    color: #212529;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    bottom: 20%;
+}
+.navbar-dark .navbar-nav .nav-link.active {
+    /* Aktif Sayfa Linki: Daha parlak Altın Sarısı */
+    color: #ffc107 !important; 
+    font-weight: bold;
+}
+
+/* Sepet Butonu Görünümü (Outline Warning) */
+.navbar-dark .btn-outline-warning {
+    color: #ffc107;
+    border-color: #ffc107;
+}
+
+.navbar-dark .btn-outline-warning:hover {
+    color: #212529 !important; /* Buton hover olunca yazı rengi koyu */
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
+/* style.css içindeki SLIDER GÖRÜNÜMÜNÜ DÜZENLEYEN KISIM */
+
+/* Sabit yüksekliği resmin KAPSAYICISINA (carousel-item) atıyoruz */
+.carousel-item {
+    height: 500px; /* Varsayılan yüksekliği belirledik */
+    overflow: hidden; /* Dışına taşan kısımları gizle */
+}
+
+/* Resim FIX: Kapsayıcıyı doldur, orantıyı koru */
+.carousel-item img {
+    height: 100%; /* Kapsayıcının %100 yüksekliğini al */
+    object-fit: cover; /* Resmi orantılı keserek tam oturmasını sağlar */
+    width: 100%;
+}
+
+/* Responsive Düzenleme: Mobil cihazlar için yüksekliği azalt */
+@media (max-width: 768px) {
+    .carousel-item {
+        height: 300px; /* Mobil cihazlarda daha kısa yükseklik */
+    }
+}
+/* ... Diğer stiller (Navbar fix, urun-resim, vb.) bu dosyanın alt kısmında kalmalıdır ... */
+
+/* ... Diğer stiller (slider fix, urun-resim, vb.) bu dosyanın alt kısmında kalmalıdır ... */
+.header-social-icons {
+    display: flex;
+    gap: 20px; /* İkonlar arası boşluk */
+    align-items: center;
+}
+
+.social-icon {
+    color: #f9f4f4; /* İkonların varsayılan rengi */
+    font-size: 18px; /* İkon boyutu */
+    text-decoration: none;
+    transition: 0.3s; /* Geçiş hızı */
+}
+
+/* Üzerine gelince renk değişimi */
+.social-icon:hover {
+    color: #007bff; /* İstediğin rengi buraya yazabilirsin */
+    transform: translateY(-3px); /* Hafif yukarı zıplama efekti */
+}

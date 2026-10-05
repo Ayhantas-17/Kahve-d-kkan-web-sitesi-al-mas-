@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ürünlerimiz - Kahve Dünyası</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">☕ A.T. KAHVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto text-center"> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="ürünler.html">Ürünler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletişim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-outline-warning ms-lg-2" href="sepet.html">🛒 Sepet (<span id="sepet-sayaci">0</span>)</a></li>
+                </ul>
+            </div>
+               <div class="header-social-icons">
+    <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+    <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+</div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 text-primary">Tüm Kahve Ürünlerimiz</h1>
+        <p class="text-center lead">Dünyanın dört bir yanından özenle seçilmiş, taze kavrulmuş kahve çekirdekleri.</p>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 mt-4">
+            
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="images/filtre.png" class="card-img-top urun-resim" alt="Ethiopia Yirgacheffe">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Ethiopia Yirgacheffe</h5>
+                        <p class="fw-bold text-success">180 TL / 250g</p>
+                        <button class="btn btn-danger sepeteEkleBtn" data-urun-id="4">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="images/ice-karamel-latte.jpg" class="card-img-top urun-resim" alt="Brazil Santos">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Brazil Santos</h5>
+                        <p class="fw-bold text-success">110 TL / 250g</p>
+                        <button class="btn btn-danger sepeteEkleBtn" data-urun-id="5">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="images/ice.latte.png" class="card-img-top urun-resim" alt="İce Latte">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Latte</h5>
+                        <p class="fw-bold text-success">130 TL / 250g</p>
+                        <button class="btn btn-danger sepeteEkleBtn" data-urun-id="6">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="images/kafeinsiz.jpg" class="card-img-top urun-resim" alt="Decaf Blend">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Kafeinsiz Harman</h5>
+                        <p class="fw-bold text-success">100 TL / 250g</p>
+                        <button class="btn btn-danger sepeteEkleBtn" data-urun-id="7">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="images/özelkarısım2.png" class="card-img-top urun-resim" alt="Özel Karışım">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Özel Karışım 250g</h5>
+                        <p class="fw-bold text-success">120 TL</p>
+                        <button class="btn btn-danger sepeteEkleBtn" data-urun-id="1">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow">
+                    <img src="images/1türkkahvesi.png" class="card-img-top urun-resim" alt="türk kahvesi">
+                    <div class="card-body text-center">
+                        <h5 class="card-title">Türk kahvesi</h5>
+                        <p class="fw-bold text-success">60 TL</p>
+                        <button class="btn btn-danger sepeteEkleBtn" data-urun-id="3">Sepete Ekle</button>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container text-center">
+            <p>© 2025 Kahve Dünyası. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

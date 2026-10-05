@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sepetim - Kahve Dünyası</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">☕ A.T. KAHVE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+               <ul class="navbar-nav mx-auto text-center"> 
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item"><a class="nav-link" href="ürünler.html">Ürünler</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hakkımızda.html">Hakkımızda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletişim.html">İletişim</a></li>
+                    <li class="nav-item"><a class="nav-link btn btn-warning active ms-lg-2" href="sepet.html">🛒 Sepet (<span id="sepet-sayaci">0</span>)</a></li>
+                </ul>
+            </div>
+               <div class="header-social-icons">
+         <a href="https://facebook.com" target="_blank" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+         <a href="https://instagram.com" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+         <a href="https://twitter.com" target="_blank" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+</div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 text-warning">Sepetim</h1>
+
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card shadow mb-4">
+                    <div class="card-body">
+                        <h2 class="h5 card-title">Sepetinizdeki Ürünler</h2>
+                        
+                        <div id="sepet-listesi">
+                            <p class="text-center text-muted py-5">Sepetiniz yükleniyor...</p>
+                        </div>
+                        <div class="text-end mt-3">
+                            <button class="btn btn-outline-secondary" id="sepet-guncelle-btn">Sepeti Güncelle</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card shadow bg-light">
+                    <div class="card-body">
+                        <h2 class="h5 card-title border-bottom pb-2">Sepet Özeti</h2>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Ara Toplam:</span>
+                            <span class="fw-bold" id="ara-toplam">0 TL</span> 
+                        </div>
+                        <div class="d-flex justify-content-between mb-2">
+                            <span>Kargo:</span>
+                            <span class="text-success fw-bold">Ücretsiz</span>
+                        </div>
+                        <hr>
+                        <div class="d-flex justify-content-between mb-3">
+                            <span class="h4">Toplam:</span>
+                            <span class="h4 text-danger fw-bold" id="toplam-fiyat">0 TL</span> 
+                        </div>
+
+                        <button class="btn btn-warning w-100 btn-lg">Ödemeye Geç</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-5 p-4">
+        <div class="container text-center">
+            <p>© 2025 Kahve Dünyası. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
